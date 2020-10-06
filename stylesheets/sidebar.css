@@ -12,7 +12,7 @@ nav {
   transition: all .8s ease-out;
 }
 nav:hover {
-  opasity: 1;
+  opacity: 1;
   transition: all .1s ease-out;
 }
 nav p {
@@ -36,7 +36,4 @@ color: #777;
 margin-top: 20px;
 font-size: 15px;
 line-height: 20px;
-}
-p {
-  line-height: 16px;
 }
