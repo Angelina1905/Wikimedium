@@ -2,7 +2,7 @@ nav {
   width: 300px;
   display: block;
   position: fixed;
-  top: 20px;
+  top: 80px;
   left: 20px;
   padding: 30px;
   font-size: 15px;
@@ -26,8 +26,17 @@ nav ul {
 }
 nav li {
   margin: 10px 0;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
-nav ul {
+nav ul > ul {
 margin-left: 10px;
 color: #777;
+margin-top: 20px;
+font-size: 15px;
+line-height: 20px;
+}
+p {
+  line-height: 16px;
 }
