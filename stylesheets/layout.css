@@ -15,26 +15,6 @@ blockquote::before {
   left: -17px;
   top: 0;
 }
-img {
-  display: block;
-  width: 1020px;
-  margin: 79px auto 0;
-}
-img + h2 {
-  margin-top: 79px;
-}
-
-img + p, img + blockquote, img + ul {
-  margin-top: 77px;
-}
-
-h2 + img {
-  margin-top: 82px;
-}
-
-h3 + img {
-  margin-top: 81px;
-}
 .menubar{
 display: flex;
 justify-content: space-between;
