@@ -72,7 +72,9 @@ article > blockquote {
   line-height: 34px;
 
 }
-article > h1, h2, h3, p, ul, blockquote { width: 700px; margin: 0 auto;
+/* article > h1, h2, h3, p, ul, blockquote { width: 700px; margin: 0 auto;
+} */
+article * { width: 700px; margin: 0 auto;
 }
 article > h1, h2, h3 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
 }
