@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body {
+      /* background: black; */
+    }
+
+      .emoji {
+        width: 160px;
+        /* width: 1120px; */
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emoji-120.png');
+        animation: shake .6s infinite;
+      }
+      .emoji-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-120.png');
+        background-position: -640px top;
+      }
+      .emoji-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-120.png');
+        background-position: -160px top;
+      }
+      .smile {
+        animation: smile 1s steps(1) alternate infinite;
+        animation-play-state: running;
+      }
+      .blink {
+        animation: blink 1s steps(1) alternate infinite;
+        animation-play-state: running;
+      }
+      .emoji:hover .smile, .emoji:hover .blink{
+        animation-play-state: paused;
+      }
+      @keyframes spin {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+      }
+      @keyframes shake {
+        0%, 50% {top: 50px;}
+        25% {top: 40px;}
+        75% {top: 30px;}
+        100% {top:50px;}
+      }
+      @keyframes smile {
+        0%{background-position: -160px top;}
+        33%{background-position: -320px top;}
+        66%{background-position: -479px top;}
+      }
+      @keyframes blink {
+        0%{background-position: -640px top;}
+        33%{background-position: -800px top;}
+        66%{background-position: -960px top;}
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="emoji" style="animation: spin 1s alternate infinite; top: 50px;">
+      <div class="emoji-e blink"></div>
+      <div class="emoji-m smile"></div>
+    </div>
+    <div class="emoji" style="animation: spin 1s alternate infinite; top: 50px;">
+      <div class="emoji-e blink"></div>
+      <div class="emoji-m"></div>
+    </div>
+    <div class="emoji">
+      <div class="emoji-e"></div>
+      <div class="emoji-m smile"></div>
+    </div>
+    <div class="emoji" style="animation: spin 1s alternate infinite; top: 50px;">
+      <div class="emoji-e blink"></div>
+      <div class="emoji-m"></div>
+    </div>
+    <div class="emoji" style="animation: spin 1s alternate infinite; top: 50px;">
+      <div class="emoji-e"></div>
+      <div class="emoji-m smile"></div>
+    </div>
+  </body>
+</html>
