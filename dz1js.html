@@ -50,6 +50,16 @@
   display: none;
   top: -85px;
 }
+.violet {
+  background-color: #4B0082;
+  border-radius: 80%;
+}
+.sharper {
+  border-radius: 0%;
+}
+.green {
+  background: green;
+}
 </style>
 
 <script>
@@ -86,6 +96,13 @@ $(".orange").click(function(){
             $(this).next(".grey").animate({opacity: "hide", top: "-85"}, "fast");
         });
 
+        $(".violet").click(function () {
+          if ($(".violet").hasClass("sharper")) {
+            $(".green").toggleClass("rounder");
+          }
+          $(this).toggleClass("sharper");
+        });
+
   });
 </script>
   </head>
@@ -100,9 +117,9 @@ $(".orange").click(function(){
 </div>
 <div class="box brown">
 </div>
-<div class="box">
+<div class="box violet">
 </div>
-<div class="box">
+<div class="box green">
 </div>
 <div class="box purple">
 </div>
