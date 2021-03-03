@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+
+.svg {
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg"), auto;
+}
+.png {
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: black;
+  display: inline-block;
+  position: relative;
+  border: 1px solid white;
+}
+</style>
+<script type="text/javascript">
+
+$(function () {
+  let count = 0;
+  $('.png').click(function () {
+    count += 1;
+    if (count == 2) {
+      $(this).removeClass('png');
+    }
+  });
+});
+</script>
+  </head>
+  <body>
+<div class="box png"></div>
+<div class="box svg"></div>
+<div id="draggable"></div>
+
+</div>
+  </body>
+</html>
